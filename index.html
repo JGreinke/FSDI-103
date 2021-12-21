@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="application.css">
+    <title>Rental Application</title>
+</head>
+<body>
+    <h1>Thank you for your submitted application! Please verify the information below:</h1>
+    <script src="script.js"></script>
+    <script>
+        //header section
+        document.write(`<b><u>Applicant Name:</b></u> ${nameFirst} ${nameLast}<br/> <b><u>Today's Date:</b></u> ${todaysDate} <br/> <b><u>Requested Move-In Date:</b></u> ${moveInDate}<br/> <b><u>Current Monthly Income:</b></u> ${currentMonthlyIncome}<br/>`); 
+        //address
+        document.write(`<b><u>Current Address:</b></u>  ${currentAddress} <br/>`);
+        //references
+        document.write(`<h2>References</h2> <b><u>Reference Name:</b></u> ${referenceNameOne} <br/> <b><u>Reference Phone Number:</b></u> ${referencePhoneOne} <br/> <b><u>Reference E-mail:</b></u> ${emailOne} <b><u> </br> Years Known: </b></u> ${yearsKnownOne} <br/> <br/> <b><u>Reference Name:</b></u> ${referenceNameTwo} <br/> <b><u>Reference Phone Number:</b></u> ${referencePhoneTwo} <br/> <b><u>Reference E-mail:</b></u> ${emailTwo} <b><u> <br/>Years Known: </b></u> ${yearsKnownTwo} <br/>`);
+        //realtor info
+        document.write(`<h2>For Realtor Use Only</h2> <b><u>Realtor Name:</b></u> ${realtorName} <br/> <b><u>Date Contaced Applicant:</b></u> ${realtorContactDate} <br/> <b><u>Location Applied For:</b></u> ${locationApplication} <br/> <b><u>All items received from Applicant?:</b></u> ${completeApplication} <br/> <b><u>Applicant's Annual Income:</b></u> ${applicantAnnualIncome} <br/> <b><u>Monthly Rent of Location:</b></u> ${monthlyRent} <br/>`); 
+    </script>
+</body>
+</html>
